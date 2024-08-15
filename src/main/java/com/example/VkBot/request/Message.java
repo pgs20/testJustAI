@@ -2,7 +2,7 @@ package com.example.VkBot.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-class Message {
+public class Message {
     @JsonProperty("date")
     private long date;
 
@@ -24,59 +24,24 @@ class Message {
     @JsonProperty("text")
     private String text;
 
-    public long getDate() {
-        return date;
-    }
-
-    public void setDate(long date) {
-        this.date = date;
-    }
-
     public long getFromId() {
         return fromId;
-    }
-
-    public void setFromId(long fromId) {
-        this.fromId = fromId;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getOut() {
-        return out;
-    }
-
-    public void setOut(int out) {
-        this.out = out;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public void setVersion(String version) {
-        this.version = version;
-    }
-
-    public long getPeerId() {
-        return peerId;
-    }
-
-    public void setPeerId(long peerId) {
-        this.peerId = peerId;
     }
 
     public String getText() {
         return text;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    @Override
+    public String toString() {
+        return "Message{" +
+                "date=" + date +
+                ", fromId=" + fromId +
+                ", id=" + id +
+                ", out=" + out +
+                ", version='" + version + '\'' +
+                ", peerId=" + peerId +
+                ", text='" + text + '\'' +
+                '}';
     }
 }
