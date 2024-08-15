@@ -5,3 +5,5 @@
 Прикладываю картинку работы бота.
 
 ![Тест1](https://github.com/user-attachments/assets/8e8fc5cf-7b52-48c3-b87f-a9557c6c160d)
+
+Так же, вот ссылка на сообщество ВК: https://vk.com/club226952158
