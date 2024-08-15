@@ -2,7 +2,7 @@ package com.example.VkBot.request;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-class MessageObject {
+public class MessageObject {
     @JsonProperty("message")
     private Message message;
 
@@ -11,7 +11,10 @@ class MessageObject {
         return message;
     }
 
-    public void setMessage(Message message) {
-        this.message = message;
+    @Override
+    public String toString() {
+        return "MessageObject{" +
+                "message=" + message +
+                '}';
     }
 }

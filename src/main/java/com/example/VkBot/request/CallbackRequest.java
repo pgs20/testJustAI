@@ -22,40 +22,23 @@ public class CallbackRequest {
         return groupId;
     }
 
-    public void setGroupId(long groupId) {
-        this.groupId = groupId;
-    }
-
     public String getType() {
         return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getEventId() {
-        return eventId;
-    }
-
-    public void setEventId(String eventId) {
-        this.eventId = eventId;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public void setVersion(String version) {
-        this.version = version;
     }
 
     public MessageObject getObject() {
         return object;
     }
 
-    public void setObject(MessageObject object) {
-        this.object = object;
+    @Override
+    public String toString() {
+        return "СallbackRequest{" +
+                "groupId=" + groupId +
+                ", type='" + type + '\'' +
+                ", eventId='" + eventId + '\'' +
+                ", version='" + version + '\'' +
+                ", object=" + object +
+                '}';
     }
 }
 
